@@ -14,4 +14,4 @@ Download the file at https://github.com/Cebion/packages/raw/main/misc/drastic.ta
 
 Boot up your console, go into the Ports menu, and run the script `DrasticInstall`. If you want to remove Drastic at any point, run the script `DrasticUninstall` in the Ports menu.
 
-Once you've installed Drastic, you can remove the installDrastic.sh file and the drastic folder from your ports directory.
+Once you've installed Drastic, you can remove the DrasticInstall.sh file and the drastic folder from your ports directory.
