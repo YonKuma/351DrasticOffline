@@ -71,7 +71,7 @@ if [ ! -d "${INSTALL_PATH}/${MYARCH}/drastic/config" ]
 then
   mkdir ${INSTALL_PATH}/${MYARCH}/drastic/config
 fi
-cp drastic/drastic.cfg ${INSTALL_PATH}/${MYARCH}/drastic/config 2>/dev/null ||:
+cp ${PACKAGE_PATH}/drastic.cfg ${INSTALL_PATH}/${MYARCH}/drastic/config 2>/dev/null ||:
 
 ### 1.0 compatibility
 if [ -f "/storage/.config/emuelec/scripts/drastic.sh" ]
