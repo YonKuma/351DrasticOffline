@@ -14,14 +14,14 @@ SHASUM="561fd70cf5c45c55892b9bdef4c376b0c7a1572e7bfa49c32adcc39eeb225a4e"
 INSTALL_PATH="/storage/drastic"
 PACKAGE_PATH="/storage/roms/ports/drastic"
 BINARY="drastic"
-PACKAGE="${PACKAGE_PATH}/drastic.tar.gz"
 LINKDEST="${INSTALL_PATH}/${MYARCH}/drastic.tar.gz"
+PACKAGE="${PACKAGE_PATH}/drastic.tar.gz"
 CFG="/storage/.emulationstation/es_systems.cfg"
 START_SCRIPT="$BINARY.sh"
 
 mkdir -p "${INSTALL_PATH}/${MYARCH}/"
 
-mv $PACKAGE $LINKDEST
+cp $PACKAGE $LINKDEST
 CHECKSUM=$(sha256sum $LINKDEST | awk '{print $1}')
 if [ ! "${SHASUM}" == "${CHECKSUM}" ]
 then
